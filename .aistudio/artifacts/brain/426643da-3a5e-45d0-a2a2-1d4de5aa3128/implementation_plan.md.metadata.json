@@ -1,0 +1,6 @@
+{
+  "summary": "Architectural blueprint and implementation plan for Anton's self-hosted LMS platform replacing Teachable and Skillspace. Covers the 4 core courses (RU/EN), dark atmospheric strah.fun-inspired UI, student video player with progress tracking, admin curriculum and student enrollment manager, batch CSV importer, and Postgres schema readiness.",
+  "updatedAt": "2026-10-14T19:16:43.407732429Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

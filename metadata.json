@@ -1,0 +1,6 @@
+{
+  "name": "TonyRoar LMS — Платформа курсов",
+  "description": "Самодостаточная LMS-платформа курсов по гипнотическим оргазмам и телесной психологии для Антона с 4 учебными треками (RU/EN), видеоплеером с сохранением прогресса, админ-панелью и импортом студентов.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

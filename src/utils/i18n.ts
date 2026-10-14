@@ -1,0 +1,238 @@
+import { Language } from '../types/lms';
+
+export const translations = {
+  ru: {
+    brand: 'TONYROAR LMS',
+    tagline: 'Психология · Эротический гипноз · Соматика',
+    nav_catalog: 'Каталог программ',
+    nav_my_courses: 'Мое обучение',
+    nav_admin: 'Управление LMS',
+    nav_logout: 'Выйти',
+    demo_switch: 'Сменить профиль',
+    demo_switch_student: 'Войти как Студент (Елена)',
+    demo_switch_admin: 'Войти как Антон (Администратор)',
+    role_admin: 'Администратор',
+    role_student: 'Студент',
+
+    // Hero / Banner
+    hero_title: 'Трансформация удовольствия и гипнотический оргазм',
+    hero_subtitle: 'Закрытая образовательная экосистема Антона: глубинная телесная чувствительность, снятие блоков и соматический экстаз.',
+    hero_cta: 'Продолжить обучение',
+    hero_explore: 'Смотреть треки',
+
+    // Catalog & My Learning
+    all_tracks: 'Все 4 учебных трека',
+    my_enrolled_tracks: 'Ваши открытые программы',
+    no_enrolled_courses: 'У вас пока нет открытых курсов. Обратитесь к Антону или активируйте доступ в каталоге.',
+    track_filter_all: 'Все программы',
+    track_filter_mastery: 'Полные курсы',
+    track_filter_quickstart: 'Быстрый старт',
+    badge_enrolled: 'Доступ открыт',
+    badge_locked: 'Требуется доступ',
+    progress_label: 'Пройдено',
+    btn_continue: 'Продолжить урок',
+    btn_start: 'Начать обучение',
+    btn_request_access: 'Запросить доступ',
+    btn_preview: 'Смотреть вводный урок',
+    modules_count: 'модулей',
+    lessons_count: 'уроков',
+
+    // Classroom / Player
+    back_to_catalog: 'Назад в кабинет',
+    lesson_progress: 'Прогресс урока',
+    mark_as_completed: 'Отметить как пройденный',
+    lesson_completed: 'Урок пройден ✓',
+    next_lesson: 'Следующий урок',
+    prev_lesson: 'Предыдущий урок',
+    speed: 'Скорость',
+    tab_notes: 'Конспект и тезисы',
+    tab_homework: 'Практика и домашнее задание',
+    tab_materials: 'Материалы и аудио',
+    no_homework: 'Для этого урока домашнее задание не требуется — сосредоточьтесь на видеопрактике.',
+    no_materials: 'Дополнительные файлы не прикреплены к этому уроку.',
+    download_btn: 'Скачать',
+    resumed_from: 'Возобновлено с отметки',
+    locked_lesson_notice: 'Этот урок заблокирован. Для просмотра оформите доступ к курсу.',
+    video_host_badge: 'Защищенный CDN стрим',
+
+    // Admin Panel
+    admin_title: 'Панель управления платформой',
+    admin_subtitle: 'Управление курсами, выдача доступов студентам, миграция с Teachable / Skillspace и экспорт в PostgreSQL 17.',
+    tab_courses_editor: 'Курсы и структура',
+    tab_students_manager: 'Студенты и доступы',
+    tab_csv_migration: 'Импорт Teachable / Skillspace',
+    tab_server_postgres: 'Деплой на сервер & PostgreSQL',
+
+    // Admin: Course Editor
+    add_section: 'Добавить модуль',
+    add_lesson: 'Добавить урок',
+    edit_lesson: 'Редактировать урок',
+    delete_lesson: 'Удалить урок',
+    save_changes: 'Сохранить изменения',
+    cancel: 'Отмена',
+    lesson_title_ru: 'Название урока (RU)',
+    lesson_title_en: 'Название урока (EN)',
+    video_url_label: 'URL видео / Bunny.net Stream / Signed URL',
+    video_url_hint: 'Поддерживаются прямые MP4/HLS потоки, Bunny.net Stream ID или внешние защищенные ссылки.',
+    duration_minutes_label: 'Длительность (минут)',
+    is_preview_label: 'Бесплатный превью-урок (доступен без оплаты)',
+    notes_label_ru: 'Конспект (RU)',
+    notes_label_en: 'Конспект (EN)',
+
+    // Admin: Students
+    search_students_placeholder: 'Поиск по email или имени...',
+    student_table_name: 'Студент',
+    student_table_email: 'Email',
+    student_table_enrolled: 'Открытые треки',
+    student_table_actions: 'Управление доступом',
+    grant_access: 'Выдать доступ',
+    revoke_access: 'Отозвать',
+    add_new_student: 'Добавить студента вручную',
+    add_student_title: 'Создать аккаунт студента',
+    select_course_grant: 'Выберите курс для выдачи',
+    student_created_success: 'Студент успешно зарегистрирован и получил доступ',
+
+    // Admin: CSV Importer
+    csv_import_title: 'Пакетный импорт студентов из Teachable & Skillspace',
+    csv_import_desc: 'Вставьте список студентов в формате CSV (email, name, course_slug) для мгновенной миграции без ручного ввода.',
+    csv_placeholder: 'elena@example.com, Елена Смирнова, master-orgasms-ru\njohn@example.com, John Doe, master-orgasms-en\nmaxim@test.ru, Максим, quickstart-male',
+    csv_parse_btn: 'Распознать и проверить',
+    csv_import_btn: 'Импортировать студентов',
+    csv_parsed_count: 'Готово к импорту',
+    csv_valid: 'Корректно',
+    csv_error: 'Ошибка курса',
+    csv_success_alert: 'Импорт успешно завершен! Студентам открыт доступ к указанным программам.',
+
+    // Admin: Server / Postgres
+    server_deployment_title: 'Развертывание на сервере 155.117.20.144',
+    server_deployment_desc: 'Инструкция и конфигурационные файлы для Caddy и systemd. Приложение работает на выделенном порту и не конфликтует с tonyroar-dashboard (:3001) или WooCommerce.',
+    copy_sql: 'Скопировать SQL схему PostgreSQL',
+    copy_caddy: 'Скопировать Caddyfile конфигурацию',
+    copy_systemd: 'Скопировать systemd сервис',
+    copied: 'Скопировано в буфер!',
+
+    // Common
+    loading: 'Загрузка...',
+    save: 'Сохранить',
+    close: 'Закрыть',
+  },
+  en: {
+    brand: 'TONYROAR LMS',
+    tagline: 'Psychology · Erotic Hypnosis · Somatics',
+    nav_catalog: 'Course Catalog',
+    nav_my_courses: 'My Learning',
+    nav_admin: 'LMS Administration',
+    nav_logout: 'Sign Out',
+    demo_switch: 'Switch Profile',
+    demo_switch_student: 'Sign in as Student (Elena)',
+    demo_switch_admin: 'Sign in as Anton (Admin)',
+    role_admin: 'Administrator',
+    role_student: 'Student',
+
+    // Hero / Banner
+    hero_title: 'Somatic Ecstasy & Hypnotic Mastery',
+    hero_subtitle: 'Anton’s private educational ecosystem: embodied sensitivity, neurological release, and thought-induced orgasm.',
+    hero_cta: 'Resume Learning',
+    hero_explore: 'Explore Tracks',
+
+    // Catalog & My Learning
+    all_tracks: 'All 4 Course Tracks',
+    my_enrolled_tracks: 'Your Enrolled Tracks',
+    no_enrolled_courses: 'You do not have any active enrollments yet. Contact Anton or request access.',
+    track_filter_all: 'All Tracks',
+    track_filter_mastery: 'Mastery Courses',
+    track_filter_quickstart: 'Quickstart Tracks',
+    badge_enrolled: 'Enrolled',
+    badge_locked: 'Access Required',
+    progress_label: 'Completed',
+    btn_continue: 'Resume Lesson',
+    btn_start: 'Start Course',
+    btn_request_access: 'Request Access',
+    btn_preview: 'Watch Free Preview',
+    modules_count: 'modules',
+    lessons_count: 'lessons',
+
+    // Classroom / Player
+    back_to_catalog: 'Back to Dashboard',
+    lesson_progress: 'Lesson Progress',
+    mark_as_completed: 'Mark as Completed',
+    lesson_completed: 'Completed ✓',
+    next_lesson: 'Next Lesson',
+    prev_lesson: 'Previous Lesson',
+    speed: 'Speed',
+    tab_notes: 'Lesson Notes & Takeaways',
+    tab_homework: 'Practical Exercises',
+    tab_materials: 'Audio & Attachments',
+    no_homework: 'No homework assigned for this session. Focus on the experiential video exercises.',
+    no_materials: 'No downloadable files attached to this session.',
+    download_btn: 'Download',
+    resumed_from: 'Resumed from',
+    locked_lesson_notice: 'This lesson is locked. Enroll in the course to unlock full access.',
+    video_host_badge: 'Secure CDN Stream',
+
+    // Admin Panel
+    admin_title: 'Platform Control Center',
+    admin_subtitle: 'Manage courses, grant student enrollments, migrate from Teachable / Skillspace, and export to PostgreSQL 17.',
+    tab_courses_editor: 'Curriculum & Courses',
+    tab_students_manager: 'Students & Access',
+    tab_csv_migration: 'Teachable / Skillspace Import',
+    tab_server_postgres: 'Server Deploy & PostgreSQL',
+
+    // Admin: Course Editor
+    add_section: 'Add Module',
+    add_lesson: 'Add Lesson',
+    edit_lesson: 'Edit Lesson',
+    delete_lesson: 'Delete Lesson',
+    save_changes: 'Save Changes',
+    cancel: 'Cancel',
+    lesson_title_ru: 'Lesson Title (RU)',
+    lesson_title_en: 'Lesson Title (EN)',
+    video_url_label: 'Video URL / Bunny Stream ID / Signed URL',
+    video_url_hint: 'Supports direct MP4/HLS streams, Bunny.net Stream video IDs, or signed CDN links.',
+    duration_minutes_label: 'Duration (Minutes)',
+    is_preview_label: 'Free Preview Lesson (Publicly accessible)',
+    notes_label_ru: 'Notes (RU)',
+    notes_label_en: 'Notes (EN)',
+
+    // Admin: Students
+    search_students_placeholder: 'Search by email or name...',
+    student_table_name: 'Student',
+    student_table_email: 'Email',
+    student_table_enrolled: 'Enrolled Tracks',
+    student_table_actions: 'Access Control',
+    grant_access: 'Grant Access',
+    revoke_access: 'Revoke',
+    add_new_student: 'Add Student Manually',
+    add_student_title: 'Create Student Account',
+    select_course_grant: 'Select course to grant',
+    student_created_success: 'Student successfully registered with course access',
+
+    // Admin: CSV Importer
+    csv_import_title: 'Bulk Student Migration from Teachable & Skillspace',
+    csv_import_desc: 'Paste a CSV list of students (email, name, course_slug) for instantaneous migration without manual typing.',
+    csv_placeholder: 'elena@example.com, Elena Smirnova, master-orgasms-ru\njohn@example.com, John Doe, master-orgasms-en\nmaxim@test.ru, Maxim, quickstart-male',
+    csv_parse_btn: 'Parse & Validate',
+    csv_import_btn: 'Commit Import',
+    csv_parsed_count: 'Ready to Import',
+    csv_valid: 'Valid',
+    csv_error: 'Course not found',
+    csv_success_alert: 'Migration complete! All verified students have received active enrollments.',
+
+    // Admin: Server / Postgres
+    server_deployment_title: 'Server Deployment for 155.117.20.144',
+    server_deployment_desc: 'Ready-to-run configurations for Caddy and systemd. Runs cleanly on its dedicated port without touching tonyroar-dashboard (:3001) or WooCommerce.',
+    copy_sql: 'Copy PostgreSQL Schema SQL',
+    copy_caddy: 'Copy Caddyfile Config',
+    copy_systemd: 'Copy systemd Service Unit',
+    copied: 'Copied to clipboard!',
+
+    // Common
+    loading: 'Loading...',
+    save: 'Save',
+    close: 'Close',
+  },
+};
+
+export function getTranslation(lang: Language) {
+  return translations[lang] || translations.ru;
+}
